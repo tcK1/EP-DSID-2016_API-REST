@@ -2,7 +2,7 @@
 
 function xml($status, $descricao, $conteudo){
     
-    $xml = new SimpleXMLElement('<resposta/>');
+    $xml = new SimpleXMLElement('<?xml version="1.0"?><resposta/>');
     $xml->addAttribute('status', $status);
     $xml->addAttribute('descricao', $descricao);
     
